@@ -1,0 +1,19 @@
+<html>
+<body>
+<h3>employee list</h2>
+{% for emp in data%}
+eno:{{emp.eno}}<br>
+name:{{emp.ename}}<br>
+salary:{{emp.esal}}<br.
+address:{{emp.eaddr}}<br>
+<a href="/edit/{{emp.id}}">edit</a>
+<a href="/delete/{{emp.id}}">delete</a>
+
+
+<hr>
+
+
+{% endfor %}
+
+</body>
+</html>
