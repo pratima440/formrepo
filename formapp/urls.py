@@ -2,7 +2,7 @@ from django.urls import path
 from django.contrib import admin
 from . import views
 urlpatterns=[
-    path('',views.show_employee),
+    path('',views.home),
     path('add/',views.add_employee),
     path('show/',views.show_employee),
 

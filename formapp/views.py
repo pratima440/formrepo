@@ -33,3 +33,10 @@ def delete_employee(request,id):
     emp.delete()
     return redirect('/show/')
 
+def home(request):
+    return HttpResponse("The django project is live,to check it,
+    add the following paths after the link:
+    /add #to add new data
+    /edit #to edit data
+    /delete #to delete data
+    /update #to update/save data")
