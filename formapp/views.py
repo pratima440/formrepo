@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from .forms import EmployeeForm
 from .models import Employee
+from django.http import HttpResponse
 def add_employee(request):
     if request.method == 'POST':
         form = EmployeeForm(request.POST)
@@ -31,3 +32,5 @@ def delete_employee(request,id):
     emp=Employee.objects.get(id=id)
     emp.delete()
     return redirect('/show/')
+def home(request):
+    return HttpResponse("Hello,your Django site is live")
