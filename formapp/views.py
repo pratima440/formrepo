@@ -32,5 +32,4 @@ def delete_employee(request,id):
     emp=Employee.objects.get(id=id)
     emp.delete()
     return redirect('/show/')
-def home(request):
-    return redirect('/show/')
+
