@@ -33,4 +33,4 @@ def delete_employee(request,id):
     emp.delete()
     return redirect('/show/')
 def home(request):
-    return HttpResponse("Hello,your Django site is live")
+    return redirect('/show/')
